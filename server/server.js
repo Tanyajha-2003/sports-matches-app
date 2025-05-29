@@ -5,7 +5,10 @@ const cors = require('cors');
 const app = express();
 const PORT = 5050;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://sports-matches-frontend.onrender.com' 
+}));
+
 app.get('/', (req, res) => {
   res.send('Welcome to the Sports Match API!');
 });

@@ -7,7 +7,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:5050/api/matches")
+    axios.get("https://sports-matches-app.onrender.com/")
       .then(res => {
         setMatches(res.data.slice(0, 10));
         setLoading(false);
