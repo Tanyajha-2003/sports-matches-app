@@ -6,7 +6,7 @@ const app = express();
 const PORT = 5050;
 
 app.use(cors({
-  origin: 'https://sports-matches-frontend.onrender.com' 
+  origin: 'https://sports-matches-frontend1.onrender.com' 
 }));
 
 app.get('/', (req, res) => {
